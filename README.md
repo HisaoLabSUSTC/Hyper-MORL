@@ -4,7 +4,7 @@ This repository contains the implementation for the paper **Learning Pareto Set 
 
 In this paper, we propose an MORL algorithm called Hyper-MORL which learns a continuous representation of the Pareto set in a high-dimensional policy parameter space using a single hypernet.
 
-![illustration](\\172.18.36.77\shutianye\Github\Hyper-MORL\illustration.png)
+![illustration](https://github.com/HisaoLabSUSTC/Hyper-MORL/blob/main/illustration.png)
 
 ## Installation Dependencies
 
