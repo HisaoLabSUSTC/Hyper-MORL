@@ -16,7 +16,7 @@ conda env create -f environment.yml
 
 If you want to install packages manually,  then you can check the **environment.yml**  file and install necessary packages.
 
-Next, we will briefly show how to run the code. For more details, please refer to **visualization/demonstration.ipynb**.
+Next, we will briefly show how to run the codes. For more details, please refer to **visualization/demonstration.ipynb**.
 
 ## Training 
 
@@ -28,12 +28,12 @@ python scripts/walker.py --num-seeds 9
 
 For your convenience, we have provided pretrained models for all problems in the **pretrained** folder.
 
-## Test
+## Testing
 
 After a hypernet is trained, you can input an arbitrary preference to obtain the learned policy parameters corresponding to the given preference. For example,
 
 ```python
-python/visualization/test_hypermorl.py --env-name MO-Walker2d-v2
+python visualization/test_hypermorl.py --env-name MO-Walker2d-v2
 ```
 
 The input preferences, output policy parameters and evaluated objective values are saved in **/results/sample** by default.
@@ -47,13 +47,13 @@ python visualization/pref_obj_visualization_2d.py
 python visualization/pref_obj_visualization_3d.py
 ```
 
-After execute the above command, you will see an interactive figure. In the figure, you can adjust the input preference by drag the point in the preference space. Moreover, you can also visualize the behavior of the output policy by clicking the button.
+After execute the above commands, you will see an interactive figure. In this figure, you can adjust the input preference by drag the point in the preference space. Moreover, you can also visualize the behavior of the output policy by clicking a button.
 
-To visualize the parameters of different policy, we use t-SNE to embed high-dimensional parameter space into two-dimensional space. These codes can be found in the **visualization/demonstration.ipynb**.
+To visualize different policy parameters, we use t-SNE to embed high-dimensional parameter space into two-dimensional space. These codes can be found in the **visualization/demonstration.ipynb**.
 
 ## Acknowledgement
 
-We use the seven multi-objective robot control problems proposed by [Xu et. al](https://github.com/mit-gfx/PGMORL) as the test problems. We use the implementation of multi-objective policy gradient from [PG-MORL repository
+We use the seven multi-objective robot control problems proposed by [Xu et al.](https://github.com/mit-gfx/PGMORL) as the test problems. We use the implementation of multi-objective policy gradient from [PG-MORL repository
 ](https://github.com/mit-gfx/PGMORL) and modify it to update the hypernet.
 
 ## Citation
