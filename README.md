@@ -53,7 +53,8 @@ To visualize the parameters of different policy, we use t-SNE to embed high-dime
 
 ## Acknowledgement
 
-Our codes are implemented based on the PGMORL repository.
+We use the seven multi-objective robot control problems proposed by [Xu et. al](https://github.com/mit-gfx/PGMORL) as the test problems. We use the implementation of multi-objective policy gradient from [PG-MORL repository
+](https://github.com/mit-gfx/PGMORL) and modify it to update the hypernet.
 
 ## Citation
 
